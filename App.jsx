@@ -1,11 +1,13 @@
-import React from 'react';
+```jsx
+import React from "react";
 
 function App() {
   return (
-    <div className="text-center mt-10 text-3xl font-bold">
-      Welcome to MKR Enterprise Frontend!
+    <div className="p-4 text-center text-xl text-gray-700">
+      <h1 className="font-bold">Welcome to MKR Enterprise ERP</h1>
     </div>
   );
 }
 
 export default App;
+```
