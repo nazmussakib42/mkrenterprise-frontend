@@ -1,127 +1,165 @@
-# 🌐 MKR Enterprise - Full ERP System (B2B & B2C)
+# 🚀 MKR Enterprise ERP System
 
-**MKR Enterprise** is a complete Business ERP & Delivery Management system designed for wholesale and retail businesses. It includes inventory, cash flow, profit tracking, customer management, delivery coordination, and reporting — all optimized for both desktop and mobile.
-
----
-
-## 🧭 Project Type
-
-- **ERP System**: B2B & B2C
-- **Tech Stack**: React (Vite), Tailwind CSS, Supabase, Telegram/WhatsApp APIs
-- **App**: Native Android (Offline-first)
+**Type**: B2B & B2C Business ERP  
+**Scope**: Inventory, Sales, Purchase, Delivery, Accounts, CRM  
+**Platform**: Web (React + Vite + Supabase) | Mobile App (React Native / Flutter)  
+**Status**: Active Development  
+**Owner**: MKR Enterprise  
+**Tech Stack**: React, Tailwind, Supabase, Node, Vercel, Telegram API, WhatsApp Cloud API  
 
 ---
 
-## 📦 Core Modules
+## 🌟 Project Highlights
 
-| Module                         | Description                                                                 |
-|-------------------------------|-----------------------------------------------------------------------------|
-| ✅ Sales (Showroom/Dealer)     | Support for walk-in and registered customers, instant invoice generation   |
-| ✅ Purchase                    | With supplier dropdown, auto stock adjustment, ledger update               |
-| ✅ Inventory Management        | FIFO method, stock ledger, alerts, and dead stock report                   |
-| ✅ Delivery Management         | Van-wise Load Sheet, memo input, return handling, partial delivery allowed |
-| ✅ Profit per Invoice          | Auto-calculated, viewable by all, editable only by Admin after delivery    |
-| ✅ Non-Stock Product Sales     | Service/custom sales tracked separately without affecting inventory        |
-| ✅ Customer Management         | Document upload (NID, License), task/reminder linked                       |
-| ✅ Supplier Management         | Same structure as customer                                                 |
-| ✅ Expense Tracker             | Cash/bank-based expense input                                              |
-| ✅ Task & Reminder System      | Per customer task tracking, due-dates, notifications                       |
-| ✅ Cash Book & Bank Book       | Daily in/out, opening balance, visible only to Accountant/Admin/Manager    |
-| ✅ Statement of Profit/Loss    | With other income, monthly summary to email                                |
-| ✅ Balance Sheet (Accrual)     | Toggle option: Cash basis or Accrual basis                                |
-| ✅ Internal Activity Log       | Logs every major user activity for admin audit                             |
-| ✅ WhatsApp/Telegram Alerts    | SMS/WhatsApp for delivery, due, and summary reports                        |
-| ✅ Document Uploads            | Linked per customer for licenses, agreements                              |
-| ✅ Route/Zone-wise Sales Map   | Assign routes, track delivery/sales performance per zone                   |
-| ✅ Load Sheet Generator        | Print A4 size sheet by Van/Zone, product grouped per customer              |
-| ✅ Digital Signature (Admin)   | Used in invoices, challans                                                 |
-| ✅ Dealer/Sub-dealer Panel     | Price margin, document upload, task link                                  |
-| ✅ Mobile App                  | Offline data entry, background sync, full role features                    |
-| ✅ Auto Approval (Customer)    | New customers auto-approved after 2 hours                                  |
-| ✅ Aging Report                | Receivables/Payables by aging bucket                                       |
-| ✅ Price Change History        | Logs user, time, old vs new price                                          |
-| ✅ E-Commerce Catalog          | Public product listing with limited data                                   |
-| ✅ Backup to Google Drive      | Auto-export daily                                                          |
-| ✅ API/Plugin Marketplace      | Future support for payment/SMS integrations                               |
+- Walk-in Sales Support (No Customer Entry Required)
+- Route-wise Van Load Sheet Generator (PDF/Excel)
+- Auto Profit Calculation per Invoice (Non-editable)
+- Cash & Bank Book with Opening Balance
+- Role-based Access (Admin, Manager, Sales, Delivery, Accountant)
+- Offline Data Entry with Auto Sync every 1 minute
+- Telegram-based Daily/Weekly/Monthly Reporting
+- WhatsApp Order/Delivery Confirmation
+- Document Upload per Customer
+- Internal Activity Logs for Admin Audit
+- Auto Backup to Google Drive (Daily)
 
 ---
 
-## 🧑‍💼 User Role Matrix
+## 📦 Modules
 
-| Feature/Module           | Admin | Manager | Accountant | Sales | Delivery |
-|--------------------------|:-----:|:-------:|:----------:|:-----:|:--------:|
-| View Sales/Invoice       | ✅    | ✅      | ✅         | ✅    | ✅       |
-| Edit After Delivery      | ✅    | ❌      | ❌         | ❌    | ❌       |
-| View Profit per Invoice  | ✅    | ✅      | ✅         | ✅    | ✅       |
-| Add/Edit Cash Book       | ✅    | ✅      | ✅         | ✅    | ❌       |
-| View Balance             | ✅    | ✅      | ✅         | ❌    | ❌       |
-| Approve Customer/Supplier| ✅    | ✅      | ✅         | ❌    | ❌       |
-| Confirm Delivery         | ✅    | ✅      | ❌         | ❌    | ✅       |
-| Access P&L Report        | ✅    | ✅      | ✅         | ❌    | ❌       |
+### 🔸 Sales
+- Walk-in Customer Sales (no data entry needed)
+- Invoice viewable by all users
+- Profit auto-calculated per invoice (no manual edits)
+- Discounts visible with daily/weekly/monthly summaries via Telegram
+- Minimum margin enforcement (10%)
+
+### 🔸 Purchase
+- Supplier tagging
+- Product cost affects P&L and stock valuation
+
+### 🔸 Inventory
+- FIFO valuation
+- Dead Stock & Slow-moving Report (>30 days no sale)
+- Auto stock update on confirmed delivery
+
+### 🔸 Delivery Management
+- Memo Number entry
+- Partial delivery & return support
+- Per-address delivery: ✅ Multiple times/day allowed
+- Load Sheet by Route/Zone (PDF & Excel)
+- Delivery confirmation updates reports, stock, and ledgers
+
+### 🔸 Cash & Bank Book
+- Shows opening cash/bank balances
+- Description dropdown + manual entry
+- Cheque number field
+- Entry: All roles
+- Balance view: Admin, Manager, Accountant only
+
+### 🔸 Profit & Loss Report
+- Basis: Cash
+- Includes non-stock sales, commissions, and damaged product sales
+- PDF/Excel/Google Sheets export
+- Access: Admin, Manager, Accountant
+
+### 🔸 Balance Sheet
+- Basis: Accrual
+- Advances from customers marked as liability
+
+### 🔸 CRM (Customer/Supplier/Dealer)
+- Auto-approval after 2 hours (optional)
+- Manual approval allowed by Admin/Manager/Accountant
+- Duplicate detection & rejection system
+- File upload: NID, License, Agreements
+
+### 🔸 Task & Reminder System
+- Customer-specific tasks (Follow-ups, Deliveries, Cheques)
+- Role-based reminders
+
+### 🔸 Route/Zone-wise Sales Mapping
+- Group customers by zone
+- Compare sales performance by area
+- Access: All roles
+
+### 🔸 Non-Stock Product Sales
+- For services or custom items
+- Do not affect inventory
+- Tagged and tracked in revenue
+
+### 🔸 Price Change History
+- Logs user, old/new price, timestamp
+- Admin-only view, exportable
+
+### 🔸 Internal User Logs
+- Track actions like entry, update, delivery, stock transfer
+- Access: Admin/Manager
+
+### 🔸 Plugin/API Marketplace
+- SMS/WhatsApp Gateway (Ajura/Twilio)
+- Future integration-ready for payment gateways
+
+### 🔸 Backup & Security
+- Auto Google Drive backup
+- Daily at fixed time
 
 ---
 
-## 🚚 Zone-wise Load Sheet
+## 📱 Mobile App Features (MKR Enterprise)
 
-- One printable sheet per Van per day
-- Grouped by:
-  - Route/Zone
-  - Customer
-  - Multiple Products per Customer
-- Contains:
-  - Product Name
-  - Quantity
-  - Delivery Address
-  - Contact
-  - Memo Number
-- Delivery person signs after confirmation
-- Auto-logs returned/pending quantities
-- A4 Printable Format
-
-📄 [Download Load Sheet (PDF)](link-here)  
-🧾 [Download Load Sheet (Excel)](link-here)  
-📱 Mobile Preview: [Figma/mockup here]
+- Native Android App
+- Full offline data entry + auto sync every 1 min
+- Background sync even when screen is off
+- Sync Progress Indicator on top bar
+- PDF invoice generation and WhatsApp sharing
+- Dark/Light Mode, Bangla/English language toggle
+- Role-based access control
+- Modules: Login, Sales, Delivery, Purchase, CRM, Stock, Reports, Notifications
 
 ---
 
-## 📲 Mobile App Features
+## 🛡️ Roles & Permissions
 
-- Native Android (iOS later)
-- Works Offline, Syncs every 1 minute
-- Background Sync (while screen off)
-- Sync Progress Indicator
-- Multi-language: Bangla 🇧🇩 and English 🇬🇧
-- Instant PDF Invoice, WhatsApp share
-- Push Notifications for:
-  - Order Updates
-  - Payment Reminders
-  - Delivery Confirmations
-
----
-
-## 📆 Telegram Reporting Schedule
-
-| Report Type         | Time         | Frequency   |
-|---------------------|--------------|-------------|
-| Discount Summary    | 9:00 PM      | Daily       |
-| Weekly Summary      | 9:00 PM      | Every Thursday |
-| Monthly Summary     | 9:00 PM      | 30/31st Day of Month |
+| Module                        | Admin | Manager | Sales | Delivery | Accountant |
+|------------------------------|:-----:|:-------:|:-----:|:--------:|:----------:|
+| Sales Entry                  | ✅    | ✅      | ✅    | ❌       | ❌         |
+| View Invoice                 | ✅    | ✅      | ✅    | ✅       | ✅         |
+| Edit After Delivery          | ✅    | ❌      | ❌    | ❌       | ❌         |
+| Delivery Confirmation        | ✅    | ✅      | ❌    | ✅       | ❌         |
+| Cash/Bank Book Entry         | ✅    | ✅      | ✅    | ❌       | ✅         |
+| View Cash/Bank Balance       | ✅    | ✅      | ❌    | ❌       | ✅         |
+| View P&L Report              | ✅    | ✅      | ❌    | ❌       | ✅         |
+| View Balance Sheet           | ✅    | ✅      | ❌    | ❌       | ✅         |
+| View Profit Per Invoice      | ✅    | ✅      | ✅    | ✅       | ✅         |
+| Access Internal Logs         | ✅    | ✅      | ❌    | ❌       | ❌         |
+| Add Customer/Supplier        | ✅    | ✅      | ✅    | ❌       | ✅         |
 
 ---
 
-## ⚙️ System Configs
+## 🗓️ Telegram Reporting Schedule
 
-- Minimum Profit Margin: **10%**
-- One address can receive **multiple deliveries per day**
-- FIFO Inventory Method
-- P&L = **Cash Basis**, BS = **Accrual Basis**
-- Sales: Walk-in customer doesn't require entry
-- Data can be input even before approval
-- Sync Interval: **1 minute**
+- Daily Report: 9:00 PM
+- Weekly Summary: Every Thursday at 9:00 PM
+- Monthly Summary: Every 30/31st at 9:00 PM
+- Includes: Sales, Discounts, Deliveries, Cash Summary
 
 ---
 
-## 🔧 Local Setup Instructions
+## 🧾 Zone-wise Van Load Sheet (Daily)
+
+- Route/Zone filter: e.g., Koyra, Bedkasi, Amadi
+- Products grouped by customer and address
+- Delivery quantity, contact, and pending status
+- One PDF/Excel file per day
+- Supports multiple products per customer
+
+📄 [Download PDF Template](#)  
+🧾 [Download Excel Template](#)  
+📱 [Mobile View Mockup](#)
+
+---
+
+## 🧪 Developer Setup
 
 ```bash
 git clone https://github.com/nazmussakib42/mkrenterprise-frontend.git
